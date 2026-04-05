@@ -1,6 +1,6 @@
-# 🔥 AI-Based Fire Detection and Rescue Drone 🚁
+# 🔥 Fire Detection and Rescue Drone 🚁
 
-🚀 AI-powered drone system for **real-time fire detection**, **autonomous response**, and **location-based alerting** using computer vision and IoT technologies.
+🚀 Smart drone system for **real-time fire detection**, **autonomous response**, and **location-based alerting** using computer vision and IoT technologies.
 
 ---
 
