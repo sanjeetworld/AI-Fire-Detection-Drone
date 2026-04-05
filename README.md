@@ -54,28 +54,28 @@ It is designed for **disaster management, forest fire monitoring, and emergency 
 ## ⚙️ System Architecture
 
 
-┌──────────────────────────────┐
-│        INPUT LAYER           │
-│  Flame | Smoke | Temperature │
-└──────────────┬───────────────┘
-               ↓
-┌──────────────────────────────┐
-│     PROCESSING LAYER         │
-│        ESP32 Controller      │
-│  - Data Acquisition          │
-│  - Fire Detection Logic      │
-│  - Decision Making           │
-└───────┬───────────┬──────────┘
-        ↓           ↓
-┌────────────┐  ┌──────────────┐
-│  SERVO     │  │     GSM      │
-│ (Extinguish)│  │  (Alert SMS)│
-└────────────┘  └──────┬───────┘
+           ┌────────────────────────────┐
+           │        INPUT LAYER         │
+           │ Flame | Smoke | Temp Sensor│
+           └────────────┬───────────────┘
                         ↓
-                  ┌────────────┐
-                  │    GPS     │
-                  │ (Location) │
-                  └────────────┘
+           ┌────────────────────────────┐
+           │     PROCESSING LAYER       │
+           │        ESP32 Controller    │
+           │ - Data Acquisition         │
+           │ - Fire Detection Logic     │
+           │ - Decision Making          │
+           └───────┬─────────┬──────────┘
+                   ↓         ↓
+          ┌────────────┐  ┌────────────┐
+          │   SERVO    │  │    GSM     │
+          │ (Extinguish)│ │ (Alert SMS)│
+          └────────────┘  └──────┬─────┘
+                                  ↓
+                            ┌──────────┐
+                            │   GPS    │
+                            │ Location │
+                            └──────────┘
 
 ### 🔍 Working Flow
 
