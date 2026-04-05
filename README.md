@@ -69,10 +69,20 @@ It is designed for **disaster management, forest fire monitoring, and emergency 
         ↓           ↓
 ┌────────────┐  ┌──────────────┐
 │  SERVO     │  │     GSM      │
-│ (Extinguish)│  │  (Alert SMS) │
+│ (Extinguish)│  │  (Alert SMS)│
 └────────────┘  └──────┬───────┘
                         ↓
                   ┌────────────┐
                   │    GPS     │
                   │ (Location) │
                   └────────────┘
+
+### 🔍 Working Flow
+
+1. Sensors (flame, smoke, temperature) continuously monitor the environment.  
+2. ESP32 processes sensor data and detects fire conditions.  
+3. If fire is detected:  
+   - Servo motor activates the extinguisher mechanism  
+   - GSM module sends alert messages  
+   - GPS module provides real-time location  
+4. System ensures fast and automated emergency response.
